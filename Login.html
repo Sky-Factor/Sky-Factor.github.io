@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <!-- connecting the javascript for functions-->
+    <script src = "MainPage.js"></script>
+    <!-- connect to javascript-->
+    <script src="Login.js"></script>
+    <!--connect to CSS-->
+    <link href="loginCSS.css" rel="stylesheet" type="text/css" />
+    <head>
+        <title>Login</title>
+    </head>
+
+    <body>
+        <!--allows user to go back to main page-->
+<button onclick = "Main()">Main Page</button>
+
+
+        <center>
+        <h1>
+            Please Login to continue
+        </h1>
+        <br>
+        <!--creats a text I can edit in the java file-->
+        <p id="loginStatus" class="loginID">Login Status</p>
+        <form id="credSubmit" onsubmit="return false">
+
+            <!--I will need "First Name" "Last Name" "Badge Number"-->
+            First Name:     <input type="text" id="FirstName" /> <br>
+            Last name:      <input type="text" id="LastName" /> <br>
+            Badge Number:   <input type="number" id="BadgeNumber" /> <br>
+    <br>
+            <!--creates the sumbit button that can be a function in javascript-->
+            <input type="submit" onclick="checkCreds()" />
+        </form>
+        </center>
+    </body>
+
+</html>
